@@ -104,10 +104,15 @@ a:hover {
 
 }
 .cards{
-  max-width: 300px;
-  align-items: center;
+  max-width: 250px;
 }
 
+.card {
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(40, 54, 24, 0.3);
+  color: rgb(40, 54, 24);
+}
 /* Testimonials*/
 
 .testimonials{
@@ -177,7 +182,7 @@ footer {
   @media screen and (max-width: 800px) {
     .gallery-container {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     .hero{
       padding: 95px;
