@@ -1,0 +1,200 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Raleway&display=swap');*/
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  }
+  
+/*Nav Menu*/
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding:0;
+  background-color: rgb(221, 161, 94);
+}  
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:end;
+    margin: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+  }
+  
+li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: 
+  }
+  
+a:hover {
+    background-color: white;
+    color: sienna;
+}
+
+.contact {
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Hero Section */
+
+.hero{
+  background-color: rgb(40, 54, 24);
+  margin:0;
+  padding: 150px;
+}
+
+.first {
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  color: rgb(254, 250, 224);
+  text-align: center;
+  padding: 30px;
+  border: 3px solid white;
+  
+}
+
+.second {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: rgb(254, 250, 224);
+  text-align: center;
+}
+
+/* About Us */
+
+.about {
+  margin: 0;
+  padding:150px;
+  background-color: rgb(188, 108, 37);
+}
+
+/*Gallery*/
+
+.gallery{
+  margin: 0;
+  padding: 100px;
+  background-color: cornsilk;
+  color: rgb(40, 54, 24);
+  
+}
+
+.gallery-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 2rem auto; 
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+/* Testimonials*/
+
+.testimonials{
+  margin: 0;
+  padding: 150px;
+  background-color: rgb(221, 161, 94);
+}
+
+blockquote{
+  font-size: 30px;
+  text-align: justify;
+}
+
+.friend{
+  padding-left: 40px;
+  font-size: 25px;
+  text-align:left;
+  text-align: justify;
+}
+blockquote::before {
+  font-size: 3rem;
+  content: open-quote;
+}
+
+blockquote::after {
+  font-size: 3rem;
+  content: close-quote;
+}
+
+
+/* Footer */
+
+footer {
+  margin: 0;
+  padding: 10px;
+  background-color:rgb(40, 54, 24);
+  color: rgb(254, 250, 224);
+  text-align: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width:1370px) {
+ 
+   header {
+      margin: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  .navbar {
+      display: flex;
+      flex-direction: column;
+    }
+
+  .cards {
+    display: flex;
+    flex flow: row wrap;
+  }
+  @media screen and (max-width: 800px) {
+    .gallery-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .hero{
+      padding: 95px;
+      text-align: center;
+    }
+
+    .first {
+      padding: 0;
+      text-align: center;
+      font-size: 55px;
+      border: none;
+    }
+    
+    .second {
+      padding: 50px;
+      font-size: 18px;
+    }
+  
+    .about, .testimonials {
+      padding: 100px;
+    }
+
+    blockquote {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .gallery {
+      padding: 50px;
+    }
+
+    .cards{
+      width: 300px;
+    }
