@@ -6,7 +6,7 @@ body {
 
 }
 
-h1, h2 {
+h1, h2{
   font-family: 'Playfair Display', serif;
   font-size: 40px;
   }
@@ -30,7 +30,7 @@ nav ul{
     list-style-type: none;
   }
   
-li a {
+li a{
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -97,10 +97,9 @@ a:hover {
   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     grid-gap: 5rem;
-    align-items: center;
-  grid-template-rows: auto 2rem auto; 
-  column-gap: 20px;
-  row-gap: 20px;
+    align-items: center; 
+    column-gap: 20px;
+    row-gap: 20px;
 
 }
 .cards{
@@ -108,6 +107,11 @@ a:hover {
 }
 
 .card {
+  grid-gap: 5rem;
+  align-items: center; 
+  column-gap: 20px;
+  row-gap: 20px;
+
   padding: 30px;
   text-align: center;
   background-color: rgba(40, 54, 24, 0.3);
@@ -171,19 +175,9 @@ footer {
       flex-direction: column;
     }
 
-    .gallery-container {
-      display: flex;
-      flex-flow: row wrap;
-    }
-
-  .cards {
-      width: 350px;
-  }
+  
   @media screen and (max-width: 800px) {
-    .gallery-container {
-      display: flex;
-      flex-direction: column;
-    }
+    
     .hero{
       padding: 95px;
       text-align: center;
@@ -208,12 +202,4 @@ footer {
     blockquote {
       display: flex;
       justify-content: space-around;
-    }
-  
-    .gallery {
-      padding: 50px;
-    }
-
-    .cards{
-      width: 300px;
     }
