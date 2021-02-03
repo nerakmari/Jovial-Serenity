@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-
 }
 
 h1, h2{
@@ -30,7 +29,7 @@ nav ul{
     list-style-type: none;
   }
   
-li a{
+li a {
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -100,8 +99,8 @@ a:hover {
     align-items: center; 
     column-gap: 20px;
     row-gap: 20px;
-
 }
+
 .cards{
   max-width: 250px;
 }
@@ -117,6 +116,7 @@ a:hover {
   background-color: rgba(40, 54, 24, 0.3);
   color: rgb(40, 54, 24);
 }
+
 /* Testimonials*/
 
 .testimonials{
@@ -175,8 +175,17 @@ footer {
       flex-direction: column;
     }
 
+    .gallery-container {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
   
   @media screen and (max-width: 800px) {
+    .gallery-container {
+      display: flex;
+      flex-direction: column;
+    }
     
     .hero{
       padding: 95px;
@@ -202,4 +211,12 @@ footer {
     blockquote {
       display: flex;
       justify-content: space-around;
+    }
+  
+    .gallery {
+      padding: 50px;
+    }
+
+    .cards{
+      width: 250px;
     }
