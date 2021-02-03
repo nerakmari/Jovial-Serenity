@@ -190,7 +190,6 @@ footer {
       display: flex;
       flex-flow: row wrap;
     }
-
   }
 
   @media screen and (max-width: 800px) {
@@ -232,6 +231,7 @@ footer {
     .cards{
       width: 250px;
     }
+  }
 
   @media screen and (max-width: 750px) {
     header {
