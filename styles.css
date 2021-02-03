@@ -94,11 +94,15 @@ a:hover {
 
 .gallery-container{
   display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-    grid-gap: 5rem;
-    align-items: center; 
-    column-gap: 20px;
-    row-gap: 20px;
+  grid-template-columns: repeat(3, minmax(16rem, 1fr));
+  max-width: 1200px;
+  margin: auto;
+​
+  grid-gap: 5rem;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+
 }
 
 .cards{
@@ -164,13 +168,20 @@ footer {
   h1{
     display: none;
   }
+
+  .logo {
+    display: absolute;
+    left: 0;
+  }
+
    header {
       margin: 0;
       text-align: center;
       display: flex;
       flex-direction: column;
     }
-  .navbar {
+    
+    .navbar {
       display: flex;
       flex-direction: column;
     }
@@ -180,7 +191,8 @@ footer {
       flex-flow: row wrap;
     }
 
-  
+  }
+
   @media screen and (max-width: 800px) {
     .gallery-container {
       display: flex;
@@ -220,3 +232,17 @@ footer {
     .cards{
       width: 250px;
     }
+
+  @media screen and (max-width: 750px) {
+    header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      }
+    ​
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      }
+    
+  }
