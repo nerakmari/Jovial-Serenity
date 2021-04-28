@@ -1,4 +1,4 @@
-# CPNT260- Assignment 2: Card Content Block
+# Jovial Serenity: Card Content Block
 
 ## Repository Owner and Maintainer: Karen Sule
 
